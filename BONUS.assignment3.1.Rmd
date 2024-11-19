@@ -6,6 +6,11 @@ output: html_notebook
 This is for the bonus point!
 
 ```{r}
-plot(cars)
+plot(cars, pch = 20, ylab = c(0,150))
+```
+```{r}
+data("cars")
+
+subset.cars <- subset(cars, cars$speed < 20)
 ```
 
